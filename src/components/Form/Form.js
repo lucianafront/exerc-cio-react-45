@@ -39,7 +39,7 @@ componentDidUpdate(){
     render() {
         console.log('Render-exibição')
 
-        return <div className='Form'>
+        return <div className='form'>
             <p>
                 <button onClick={this.increment}>Aumentar</
                 button>
@@ -50,7 +50,7 @@ componentDidUpdate(){
             
               
                 <button onClick={this.handleClick}>
-                    {this.state.isTooggleon ? 'Liga' : 'Desliga'}
+                    {this.state.isTooggleon ? 'Ligado' : 'Desligado'}
                 </button>
           
         </div>

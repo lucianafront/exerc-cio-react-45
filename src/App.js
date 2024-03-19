@@ -2,7 +2,7 @@ import './App.css';
 import Header from './components/Header';
 import CalculatorIMC from './components/IMC';
 import Form from './components/Form/Form'
-import Login from'./components/Login'
+import Login from'./components/Login/LoginControl'
 
 function App() {
   return (
@@ -13,9 +13,11 @@ function App() {
    
    <Form title="props" />
 
-   <Login isLoggedIn={true}/>
+   <Login name={'Luciana'}/>
     
     </div>
+
+    
   );
 }
 
