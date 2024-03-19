@@ -1,38 +1,39 @@
 import React from 'react'
-import Login from'.index'
 import UserGreeting from './index'
 
 export default class LoginControl extends React.Component{
 
     constructor(props){
         super(props)
+
         this.handleLogin=this.handleLogin.bind(this)
 
-        this.handlogout=this.handlogout(this)
+        this.handlogout=this.handLogout(this)
+
         this.state={
-            isLoggegIn:false
+            isLoggedIn:false
         }
 
 
     }
     handleLogin(){
-        this.setState({isLoggegIn:true})
+        this.setState({isLoggedIn:true})
 
     }
     handlogout(){
-        this.setState({isLoggegIn:false})
+        this.setState({isLoggedIn:false})
 
     }
 
     render(){
-        const isLoggedIn =this.state.isLoggegIn
+        const isLoggedIn = this.state.isLoggedIn
 
         let button
 
         if (isLoggedIn) {
-            button= <button onClick={this.handlogout}>sair</button>    
+            button= <button onClick={this.handLogout}>sair</button>    
         }else{
-            button=<button onClick={this.handlogout}>Acessar</button>
+            button=<button onClick={this.handLogout}>Acessar</button>
         }
         return(
             <div>
